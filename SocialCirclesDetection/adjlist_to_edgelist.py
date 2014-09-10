@@ -8,7 +8,6 @@ def convert(file_name):
 	    for dest in dests:
                 if(dest != "" and source != ""):
             	    outputfile.write(source + " " + dest.strip() + "\n")
-           	    print source + " " + dest.strip() + "\n"
 	   
 
 if __name__ == "__main__":
