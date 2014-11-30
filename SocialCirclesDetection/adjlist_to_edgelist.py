@@ -6,7 +6,7 @@ def convert(file_name):
             source = line.split(":")[0]
             dests = line.split(":")[1].split(" ")
 	    for dest in dests:
-                if(dest != "" and source != ""):
+                if(dest.strip() != "" and source.strip() != ""):
             	    outputfile.write(source + " " + dest.strip() + "\n")
 	   
 
